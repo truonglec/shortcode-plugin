@@ -1,0 +1,107 @@
+
+.snippet-quote {
+	color: $green;
+	font-family: $georgia;
+	font-size: 20px;
+	font-style: italic;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	position: relative;
+
+	.content {
+		display: inline-block;
+		position: relative;
+
+		&:before {
+			bottom: 0;
+			color: rgba( $green, .3 );
+			content: "\f10e";
+			font-family: $fontawesome;
+			font-size: 36px;
+			position: absolute;
+			right: 15px;
+		}
+	}
+
+	&.left {
+		&:before {
+			right: 30px;
+		}
+	}
+
+	cite {
+	    color: $gray-light;
+	    display: block;
+	    font-size: 10px;
+	    font-style: normal;
+	    letter-spacing: 1px;
+	    margin: 20px 0 0;
+	    text-align: right;
+	    text-transform: uppercase;
+	}
+
+	@include bp(md) {
+		padding: 0 30px 15px;
+
+		&:before {
+			right: 45px;
+		}
+
+		&.right {
+			&:before {
+				right: 15px;
+			}
+		}
+	}
+	@include bp(md) {
+		&.left, &.right {
+			clear: none;
+			margin: 0;
+			width: 50%;
+		}
+
+		&.left {
+			float: left;
+			padding: 0 15px 15px 0;
+		}
+
+		&.right {
+			float: right;
+			padding: 0 0 15px 15px;
+		}
+	}
+}
+
+.lf-quote{
+	color: $green;
+	font-family: "Yanone Kaffeesatz", sans-serif;
+	font-size: 36px;
+	font-weight: normal;
+
+}
+	.lf-quote__right{
+		float: right;
+	}
+	.lf-quote__left{
+		float: left;
+	}
+	.lf-quote__full{
+		margin: 80px 0;
+		padding: 80px;
+	}
+	.lf-quote__border-top-bottom{
+		border-top: 5px solid $gray-lighter;
+		border-bottom: 5px solid $gray-lighter;
+	}
+
+	.lf-quote__border-left{
+		border-left: 5px solid $gray-lighter;
+		padding: 15px;
+	}
+	.lf-quote__spacing-big{
+		padding: 80px;
+	}
+	.lf-quote__spacing-small{
+		padding: 15px;
+	}
+

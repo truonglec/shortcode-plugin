@@ -1,0 +1,24 @@
+# Required Info
+name: video
+content: nested
+options:
+  - name: position
+    values: left, right
+
+# To be used in style guide generation
+title: Video
+description:
+  A text box for standout content.
+is_shortcode: true
+examples:
+  - >
+    [video]
+    Standout content text here.
+    [/video]
+
+
+# Mock data to pass to the component for test rendering
+mock:
+  content: Laziness is nothing more than the habit of resting before you get tired.
+  type: dotted
+  position: left

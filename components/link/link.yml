@@ -1,0 +1,30 @@
+# Required Info
+name: link
+content: nested
+options:
+  - name: url
+  - name: type
+    values: external
+
+
+# To be used in style guide generation
+title: Link
+description:
+  Link
+is_shortcode: true
+examples:
+  - >
+    [link]
+    Standout content text here.
+    [/link]
+  - >
+    [link type="external" url=""]
+    Standout content text here.
+    [/link]
+
+
+# Mock data to pass to the component for test rendering
+mock:
+  content: Laziness is nothing more than the habit of resting before you get tired.
+  type : external
+  url: 

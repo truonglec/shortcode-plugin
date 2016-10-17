@@ -1,0 +1,68 @@
+.snippet-cr-ad {
+	.block {
+		@include gradient-horizontal( $blue-lighter, rgba(255, 255, 255, 0), 75%, 100% );
+		border-bottom: 2px solid $gray-lightest;
+		border-right: 1px solid $gray-lightest;
+		clear: both;
+		padding: 10px;
+		position: relative;
+
+		@include bp(sm) {
+			padding: 10px 90px 10px 10px;
+		}
+
+		&:before {
+			background: #555555;
+		    background: rgba(0, 0, 0, 0.6);
+		    bottom: 0;
+		    color: #fff;
+		    content: "Sponsored";
+		    font-size: 10px;
+		    font-weight: bold;
+		    right: 0;
+		    padding: 5px 10px;
+		    position: absolute;
+		}
+	}
+
+	.image {
+		display: block;
+		margin: -10px -10px 20px -10px;
+
+		@include bp(sm) {
+			margin: -10px;
+		}
+
+		img {
+			width: 100%;
+			max-width: none;
+		}
+	}
+
+	.title {
+		color: $gray-darker;
+		display: block;
+		font-weight: bold;
+
+		@extend .ellipsis;
+	}
+
+	.phone {
+		color: $green;
+		display: block;
+		font-size: 13px;
+		font-weight: bold;
+		margin: 5px 0;
+
+		[data-entypo-icon] {
+			position: relative;
+			top: 4px;
+		}
+	}
+
+	.address {
+		font-size: 11px;
+		margin-bottom: 5px;
+	}
+
+}

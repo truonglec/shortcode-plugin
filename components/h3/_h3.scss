@@ -1,0 +1,16 @@
+.snippet-h3 {
+	clear: none;
+	color: $gray;
+	font-size: 20px;
+
+	&:before {
+		border-bottom: 8px solid transparent;
+		border-left: 12px dashed $gray;
+		border-top: 8px solid transparent;
+		content: " ";
+		display: inline-block;
+		height: 0;
+		margin-right: 15px;
+		width: 0;
+	}
+}

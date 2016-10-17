@@ -1,0 +1,49 @@
+.lf-section-break {
+	max-height: 600px;
+	padding:150px 0;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+.lf-section-break__tall{
+	height: 600px;
+}
+	.lf-section-break__title {
+		font-size: 50px;
+		color: $white;
+		font-weight: bold;
+
+	}
+	.lf-section__h2{
+		color: $green;
+		font-family: "Yanone Kaffeesatz", sans-serif;
+		font-size: 36px;
+		font-weight: normal;
+		margin: 40px 0;
+
+	}
+	.lf-section__h3{
+		color: $green;
+		font-family: "Yanone Kaffeesatz", sans-serif;
+		font-size: 28px;
+		font-weight: normal;
+		margin: 40px 0 20px;
+		border-bottom: 2px solid $gray-light;
+		padding-bottom: 6px;
+	}
+	.lf-section__h4 {
+		color: $green;
+		font-family: "Open Sans", sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+		margin: 40px 0 20px;
+	}
+	.lf-section__h5 {
+		color: #555;
+		font-family: "Open Sans", sans-serif;
+		font-size: 16px;
+		font-weight: bold;
+		margin: 40px 0 10px;
+	}

@@ -1,0 +1,25 @@
+# Required Info
+name: section-break
+content: nested
+options:
+  - name: height
+    values: normal, tall
+  - name: src
+
+# To be used in style guide generation
+title: Section Break
+description:
+  A big image section break
+is_shortcode: true
+examples:
+  - >
+    [section-break height="tall" img=""]
+    Standout content text here.
+    [/section-break]
+
+
+# Mock data to pass to the component for test rendering
+mock:
+  content: Laziness is nothing more than the habit of resting before you get tired.
+  height: tall
+  img: 

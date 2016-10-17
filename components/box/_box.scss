@@ -1,0 +1,61 @@
+.snippet-box {
+	display: block;
+	padding: 0 0 30px;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+
+	.content {
+		background: $green-lighter;
+		padding: 30px;
+
+		.content {
+			padding: 0;
+		}
+	}
+
+	&.blue {
+		color: #333;
+
+		.content {
+			background: $blue-light;
+		}
+	}
+
+	&.yellow {
+		.content {
+			background: $gold;
+		}
+	}
+
+	.snippet-list {
+		padding: 0;
+
+		li {
+			padding-left: 17px;
+			text-indent: -17px;
+			text-align: left;
+
+			.content {
+				display: inline;
+			}
+		}
+	}
+	@include bp(md) {
+		&.left, &.right {
+			clear: none;
+			margin: 0;
+			width: 50%;
+		}
+
+		&.left {
+			float: left;
+			padding: 0 15px 15px 0;
+		}
+
+		&.right {
+			float: right;
+			padding: 0 0 15px 15px;
+		}
+	}
+}

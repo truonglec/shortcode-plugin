@@ -1,0 +1,20 @@
+# Required Info
+name: h3
+content: nested
+
+# To be used in style guide generation
+title: h3
+description:
+  H3 heading
+is_shortcode: true
+examples:
+  - >
+    [h3]
+    H3 title here
+    [/h3]
+
+
+# Mock data to pass to the component for test rendering
+mock:
+  content: Laziness is nothing more than the habit of resting before you get tired.
+

@@ -1,0 +1,36 @@
+# Required Info
+name: quote
+content: nested
+options:
+  - name: border
+    values: top-bottom, left
+  - name: position
+    values: left, right, full
+  - name: by
+
+
+# To be used in style guide generation
+title: Quote
+description:
+  A pull out quote
+is_shortcode: true
+examples:
+  - >
+    [quote]
+    Standout content text here.
+    [/quote]
+  - >
+    [quote position="right"]
+    Standout content text here.
+    [/quote]
+  - >
+    [quote border="left" by="Adam Johnson" position="left"]
+    Standout content text here.
+    [/quote]
+
+# Mock data to pass to the component for test rendering
+mock:
+  content: Laziness is nothing more than the habit of resting before you get tired.
+  border: top-bottom
+  position: left
+  by: John Adams

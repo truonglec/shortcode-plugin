@@ -1,0 +1,26 @@
+# Required Info
+name: menu-widget
+content: nested
+vestedshortcode: 
+  - name: li
+    options: 
+    - name: id
+
+# To be used in style guide generation
+title: Menu Widget
+description:
+  A static menu widget
+is_shortcode: true
+examples:
+  - >
+    [menu-widget]
+    [li]
+    [/li]
+    [/menu-widget]
+
+
+# Mock data to pass to the component for test rendering
+mock:
+  content: Laziness is nothing more than the habit of resting before you get tired.
+  type: dotted
+  position: left

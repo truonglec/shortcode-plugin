@@ -1,0 +1,17 @@
+# Required Info
+name: phone
+content: not-nested
+
+# To be used in style guide generation
+title: Phone
+description:
+  A predefined phone number
+is_shortcode: true
+examples:
+  - >
+    [phone]
+
+
+# Mock data to pass to the component for test rendering
+mock:
+  content: 

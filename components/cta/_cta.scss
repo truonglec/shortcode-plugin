@@ -1,0 +1,99 @@
+.snippet-cta {
+	background: none;
+	color: white;
+	display: block;
+	margin: 0 0 30px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+
+	&:active, &:focus, &:hover {
+		background: none;
+		color: white;
+		text-decoration: none;
+	}
+
+	.content {
+		display: table;
+		min-height: 220px;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+
+	img {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		filter: gray;
+		height: 100%;
+		position: absolute;
+		// width: 100%;
+		min-width: 100%;
+		max-width: none;
+	}
+
+	.info {
+		background: $green-lighter;
+		background: rgba( $green-lighter, .7 );
+		display: table-cell;
+		font-family: $oswald;
+		font-size: 24px;
+		font-weight: bold;
+		min-height: 220px;
+		line-height: normal;
+		padding: 30px;
+		position: relative;
+		text-align: center;
+		text-shadow: 0 0 3px rgba( $black, .3);
+		vertical-align: middle;
+		width: 100%;
+	}
+
+	&.blue {
+		.info {
+			background: $blue;
+			background: rgba( $blue, .8 );
+		}
+	}
+
+	&.yellow {
+		.info {
+			background: $gold;
+			background: rgba( $gold, .7 );
+		}
+	}
+
+	.snippet-list {
+		padding: 0;
+		li {
+			padding-left: 29px;
+			text-indent: -29px;
+			text-align: left;
+
+			.content {
+				color: $white;
+				display: inline;
+			}
+		}
+	}
+
+	@include bp(md) {
+		&.left, &.right {
+			clear: none;
+			margin: 0;
+			width: 50%;
+		}
+
+		&.left {
+			float: left;
+			padding: 0 15px 15px 0;
+		}
+
+		&.right {
+			float: right;
+			padding: 0 0 15px 15px;
+		}
+	}
+}
+
+

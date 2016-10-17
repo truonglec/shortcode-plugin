@@ -1,0 +1,26 @@
+# Required Info
+name: expand
+content: nested
+options:
+  - name: title
+
+# To be used in style guide generation
+title: Expandable box
+description:
+  An Expandable box content.
+is_shortcode: true
+examples:
+  - >
+    [expand]
+    Standout content text here.
+    [/expand]
+  - >
+    [expand title="Laziness"]
+    Standout content text here.
+    [/expand]
+
+
+# Mock data to pass to the component for test rendering
+mock:
+  content: Laziness is nothing more than the habit of resting before you get tired.
+  title: Laziness

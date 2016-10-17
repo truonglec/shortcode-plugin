@@ -1,0 +1,35 @@
+# Required Info
+name: cols
+content: nested
+options:
+  - name: class
+    values: menu-widget-container
+  - name: id
+vestedshortcode:
+  - name: col
+    options: 
+    - name: num
+      value: 1
+
+# To be used in style guide generation
+title: Columns
+description:
+  Grid columns container.
+is_shortcode: true
+examples:
+  - >
+    [cols]
+      [col]
+      [/col]
+    [/cols]
+  - >
+    [cols]
+      [col num="2"]
+      [/col]
+    [/cols]
+
+
+# Mock data to pass to the component for test rendering
+mock:
+  content: Laziness is nothing more than the habit of resting before you get tired.
+  num: 2

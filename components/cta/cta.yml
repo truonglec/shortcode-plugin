@@ -1,0 +1,34 @@
+# Required Info
+name: cta
+content: nested
+options:
+  - name: color
+    values: yellow, blue
+  - name: position
+    values: left, right
+  - name: url
+  - name: img
+# To be used in style guide generation
+title: CTA
+description:
+  Call to action
+is_shortcode: true
+examples:
+  - >
+    [cta]
+    Standout content text here.
+    [/cta]
+  - >
+    [cta color="yellow"]
+    Standout content text here.
+    [/cta]
+  - >
+    [cta style="yellow" position="left"]
+    Standout content text here.
+    [/cta]
+
+# Mock data to pass to the component for test rendering
+mock:
+  content: Laziness is nothing more than the habit of resting before you get tired.
+  type: dotted
+  position: left

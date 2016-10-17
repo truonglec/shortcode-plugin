@@ -1,0 +1,14 @@
+.snippet-list {
+	list-style-position: inside;
+	padding-left: 30px;
+
+	li {
+		color: $green;
+		margin-bottom: 10px;
+	}
+
+	.content {
+		color: $gray-dark;
+		display: inline;
+	}
+}

@@ -1,0 +1,38 @@
+# Required Info
+name: img
+content: nested
+options:
+  - name: breakout
+  - name: alt
+  - name: src
+  - name: position
+    values: left, right
+  - name: modal
+    values: true, false
+  - name: overlay
+    values: outside
+
+# To be used in style guide generation
+title: img
+description:
+  A text box for standout content.
+is_shortcode: true
+examples:
+  - >
+    [img]
+    Standout content text here.
+    [/img]
+  - >
+    [img color="yellow"]
+    Standout content text here.
+    [/img]
+  - >
+    [img style="yellow" position="left"]
+    Standout content text here.
+    [/img]
+
+# Mock data to pass to the component for test rendering
+mock:
+  content: Laziness is nothing more than the habit of resting before you get tired.
+  type: dotted
+

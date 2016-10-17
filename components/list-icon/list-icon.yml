@@ -1,0 +1,23 @@
+# Required Info
+name: list-icon
+content: nested
+vestedshortcode: 
+  - name: li
+    options: 
+    - name: img
+
+# To be used in style guide generation
+title: List Icon
+description:
+  A text box for standout content.
+is_shortcode: true
+examples:
+  - >
+    [list-icon]
+      [li img=""]
+      [/li]
+    [/list-icon]
+
+# Mock data to pass to the component for test rendering
+mock:
+  content: Laziness is nothing more than the habit of resting before you get tired.

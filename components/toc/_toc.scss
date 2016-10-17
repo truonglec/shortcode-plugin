@@ -1,0 +1,58 @@
+.snippet-toc {
+	margin-bottom: 30px;
+	width: 100%;
+
+	.content {
+		box-shadow: 0 0 3px 0 rgba( $black, .3 );
+		padding: 2px;
+	}
+
+	.header {
+		background: $blue-darker;
+		color: $white;
+		font-family: $yakone;
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 2px;
+		padding: 7px 15px;
+	}
+
+	img {
+		margin-bottom: 2px;
+	}
+
+	.op-toc {
+		background: $blue-light;
+		color: $blue-dark;
+		list-style: disc;
+		padding: 20px 20px 20px 40px;
+		margin: 0;
+
+		li {
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: $blue-dark;
+			font-weight: bold;
+		}
+	}
+	@include bp(md) {
+		&.left, &.right {
+			clear: none;
+			margin: 0;
+			width: 50%;
+		}
+
+		&.left {
+			float: left;
+			padding: 0 15px 15px 0;
+		}
+
+		&.right {
+			float: right;
+			padding: 0 0 15px 15px;
+		}
+	}
+}
+

@@ -1,0 +1,24 @@
+# Required Info
+name: ul
+content: nested
+vestedshortcode: 
+  - name: li
+
+# To be used in style guide generation
+title: Unorderd List
+description:
+  A formatted unordered list
+is_shortcode: true
+examples:
+  - >
+    [ul]
+      [li]
+        tandout content text here.
+      [li]
+    [/ul]
+
+
+# Mock data to pass to the component for test rendering
+mock:
+  content: Laziness is nothing more than the habit of resting before you get tired.
+

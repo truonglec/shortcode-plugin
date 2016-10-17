@@ -1,0 +1,40 @@
+#main .snippet-expand {
+	margin-bottom: 30px;
+
+	+ .snippet-expand {
+		margin-top: -30px;
+	}
+
+	.title {
+		background: $blue-light;
+		border: 1px solid $gray-pale;
+		color: $blue-dark;
+		font-family: $yakone;
+		font-size: 18px;
+		padding: 10px 20px;
+
+		&.active {
+			font-weight: bold;
+
+			.arrow {
+				transform: rotate(-90deg);
+			}
+		}
+	}
+
+	.arrow {
+		border-bottom: 8px solid transparent;
+		border-right: 10px dashed $blue-dark;
+		border-top: 8px solid transparent;
+		float: right;
+		margin-top: 5px;
+		transition: all .3s ease;
+	}
+
+	.content {
+		border: 1px solid $gray-pale;
+		border-top: none;
+		display: none;
+		padding: 30px;
+	}
+}

@@ -1,0 +1,23 @@
+# Required Info
+name: li
+content: nested
+options: 
+ - name: id
+ - name: img
+
+# To be used in style guide generation
+title: List item
+description:
+  A list item
+is_shortcode: true
+examples:
+  - >
+    [li]
+    Standout content text here.
+    [/li]
+  - >
+
+# Mock data to pass to the component for test rendering
+mock:
+  content: Laziness is nothing more than the habit of resting before you get tired.
+

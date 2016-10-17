@@ -1,0 +1,10 @@
+.snippet-link {
+	background: none;
+	color: $blue-dark;
+	font-weight: bold;
+	text-decoration: underline;
+
+	&:active, &:focus, &:hover {
+		text-decoration: underline;
+	}
+}

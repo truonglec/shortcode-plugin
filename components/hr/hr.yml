@@ -1,0 +1,13 @@
+# Required Info
+name: hr
+content: not-nested
+
+# To be used in style guide generation
+title: Line break
+description:
+  A text box for standout content.
+is_shortcode: true
+examples:
+  - >
+    [hr]
+

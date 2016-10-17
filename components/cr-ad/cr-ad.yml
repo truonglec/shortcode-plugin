@@ -1,0 +1,26 @@
+# Required Info
+name: cr-ad
+content: not-nested
+options:
+  - name: header
+  - name: message
+
+
+# To be used in style guide generation
+title: CR Ads
+description:
+  Client Reach ads
+is_shortcode: true
+examples:
+  - >
+    [cr-ad]
+    [/cr-ad]
+  - >
+    [cr-ad]
+    [/cr-ad]
+
+
+# Mock data to pass to the component for test rendering
+mock:
+  content: Laziness is nothing more than the habit of resting before you get tired.
+  num: 2

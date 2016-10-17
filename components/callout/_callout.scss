@@ -1,0 +1,68 @@
+.snippet-callout {
+	clear: both;
+	margin-bottom: 30px;
+
+	.wrap {
+		box-shadow: 0 0 3px 0 rgba( $black, .3 );
+	}
+
+	.title {
+		@extend h4;
+
+		background: $green;
+		color: white;
+		font-size: 22px;
+		margin: 0;
+		padding: 15px;
+		text-align: center;
+	}
+
+	.content {
+		min-height: 116px;
+		padding: 10px;
+		position: relative;
+
+		.content {
+			min-height: none;
+			padding: 0;
+		}
+	}
+
+	.snippet-img-wrap {
+		border: none;
+		height: 96px;
+		left: 10px;
+		overflow: hidden;
+		position: absolute;
+		top: 10px;
+		width: 96px;
+
+		+ .info {
+			padding-left: 106px;
+		}
+	}
+
+	img {
+		border: none;
+		padding: none;
+	}
+
+	@include bp(md) {
+		&.left, &.right {
+			clear: none;
+			margin: 0;
+			width: 50%;
+		}
+
+		&.left {
+			float: left;
+			padding: 0 15px 15px 0;
+		}
+
+		&.right {
+			float: right;
+			padding: 0 0 15px 15px;
+		}
+	}
+	
+}

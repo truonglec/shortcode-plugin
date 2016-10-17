@@ -1,0 +1,28 @@
+# Required Info
+name: col
+content: nested
+options:
+  - name: num
+    value: 1
+  - name: id
+
+# To be used in style guide generation
+title: Column
+description:
+  Grid column.
+is_shortcode: true
+examples:
+  - >
+    [col]
+    Content text here.
+    [/col]
+  - >
+    [col num="2"]
+    Standout content text here.
+    [/col]
+
+
+# Mock data to pass to the component for test rendering
+mock:
+  content: Laziness is nothing more than the habit of resting before you get tired.
+  num: 2
